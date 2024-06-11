@@ -17,7 +17,7 @@ on:
 
 jobs:
   occlum_sgx_ci:
-    runs-on: self-hosted
+    runs-on: sgx
     container:
       image: occlum/occlum:latest-ubuntu20.04
       options: --device /dev/sgx_enclave --device /dev/sgx_provision
