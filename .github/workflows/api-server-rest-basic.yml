@@ -15,7 +15,7 @@ on:
       - '.github/workflows/api-server-rest-basic.yml'
       - 'Cargo.toml'
       - 'Cargo.lock'
-  create:
+  #create:
   workflow_dispatch:
 
 concurrency:

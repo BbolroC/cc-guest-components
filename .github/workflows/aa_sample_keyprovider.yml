@@ -10,7 +10,7 @@ on:
     paths:
       - 'attestation-agent/coco_keyprovider/**'
       - '.github/workflows/aa_sample_keyprovider.yml'
-  create:
+  #create:
   workflow_dispatch:
 
 jobs:

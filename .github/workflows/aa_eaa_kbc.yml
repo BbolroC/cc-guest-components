@@ -11,7 +11,7 @@ on:
   #   paths:
   #     - 'attestation-agent/kbc/eaa_kbc/**'
   #     - '.github/workflows/aa_eaa_kbc.yml'
-  create:
+  #create:
   workflow_dispatch:
 
 jobs:

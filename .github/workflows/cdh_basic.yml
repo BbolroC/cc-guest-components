@@ -15,7 +15,7 @@ on:
       - '.github/workflows/cdh_basic.yml'
       - 'Cargo.toml'
       - 'Cargo.lock'
-  create:
+  #create:
   workflow_dispatch:
 
 concurrency:
