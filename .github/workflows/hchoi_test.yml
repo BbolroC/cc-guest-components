@@ -1,0 +1,29 @@
+name: hchoi test
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '.github/workflows/hchoi_test.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/hchoi_test.yml'
+  create:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  hchoi_test:
+    if: github.event.pull_request.merged == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Echo hello world
+        run: echo "Hello, world!"
