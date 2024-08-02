@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   hchoi_test:
-    if: github.event.pull_request.merged == false
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
